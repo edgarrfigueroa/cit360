@@ -1,0 +1,37 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+public class TestSorting {
+
+	
+	public ArrayList<Integer> createArray(){
+		ArrayList<Integer> arr = new ArrayList<Integer>();
+		arr.add(8);
+		arr.add(4);
+		arr.add(3);
+		arr.add(2);
+		arr.add(5);
+		
+		return arr;
+		
+	}
+	public void displayArray(ArrayList<Integer> arr){
+		for(int i=0; i<arr.size(); i++){
+			System.out.print(arr.get(i)+",");
+		}
+		
+	}
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TestSorting obj1 = new TestSorting();
+		ArrayList<Integer> arr = obj1.createArray();
+		obj1.displayArray(arr);
+		Collections.sort(arr);
+		System.out.println("after sorting");
+		obj1.displayArray(arr);
+}
+}
